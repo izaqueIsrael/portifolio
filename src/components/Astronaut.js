@@ -1,7 +1,12 @@
+import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
+import { TextureLoader } from 'three';
+import textureImg from '../images/astronauta-explora-al-generativo-do-espaco-escuro-exterior.jpg';
 
 const AstronautCanvas = () => {
+  const texture = new TextureLoader().load(textureImg);
+
   return (
     <Canvas
       style={{ height: '48rem' }}
@@ -14,7 +19,8 @@ const AstronautCanvas = () => {
       <hemisphereLight intensity={0.15} groundColor='black' />
       <pointLight intensity={1} />
       <Sphere args={[2, 32, 32]} scale={1.7}>
-        <MeshDistortMaterial color='#140e18' attach='material' distort={0.3} speed={2} />
+        <meshStandardMaterial map={texture} attach='material' />
+        <MeshDistortMaterial map={texture} attach='material' distort={0.1} speed={2} />
       </Sphere>
     </Canvas>
   );
