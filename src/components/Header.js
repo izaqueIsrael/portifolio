@@ -26,7 +26,7 @@ function Header() {
             <div className="header__texts">
               <h1>
                 <ReactTypingEffect
-                  text={["Olá, eu sou Izaque!"]}
+                  text={["Olá!", 'Seja Bem-Vindo!']}
                   speed={100}
                   eraseDelay={2000}
                   typingDelay={500}
@@ -37,7 +37,7 @@ function Header() {
               </h1>
               <div className={`text-transition ${isLoading ? 'loading' : 'loaded'}`}>
                 <h2 className={`text subtitle ${isLoading ? '' : 'fade-in'}`}>
-                  Desenvedor Full Stack
+                  Izaque, Desenvedor Full Stack
                 </h2>
                 <p className={`text header__subtitle ${isLoading ? '' : 'fade-in'}`}>
                   Sou um desenvolvedor web entusiasmado em transformar ideias em realidade!
