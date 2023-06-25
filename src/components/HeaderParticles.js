@@ -12,7 +12,9 @@ const HeaderParticles = () => {
   }, []);
 
   return (
-    <div>
+    <div
+      className="particles"
+    >
       <Particles
         id="tsparticles"
         init={particlesInit}
