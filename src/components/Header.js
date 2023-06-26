@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import HeaderParticles from "./HeaderParticles";
+import HeaderParticles from "./HeaderParticles";
 import astronautImg from '../images/cosmic_dance___astronaut_grooving_in_space_by_dominguez_go_dfxuauh-fullview.png'
 import waving from '../images/gifs/wave.gif'
 import ReactTypingEffect from 'react-typing-effect';
@@ -18,7 +18,6 @@ function Header() {
 
   return (
     <header className="header">
-      {/* <HeaderParticles /> */}
       <div className="cloud">
         <div className='header__container'>
           <div className="header__content">
@@ -48,6 +47,7 @@ function Header() {
           <img className="scroll" src={arrow} alt='vá para baixo' />
         </div>
       </div>
+      {/* <HeaderParticles /> */}
     </header>
   );
 }

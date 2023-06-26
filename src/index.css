@@ -33,10 +33,10 @@
 }
 
 .text {
-  text-align: justify;
   font-family: monospace, roboto, Inter;
   color: #D3D3D3;
   font-size: 1.375rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .cite {
@@ -69,7 +69,7 @@
   justify-content: center;
   align-items: center;
   min-height: 10vh;
-  z-index: 2;
+  z-index: 9999;
   width: 100%;
   padding: 0;
 }
@@ -347,7 +347,6 @@
   gap: 1rem;
   margin: 2rem 0;
   padding: 0;
-  z-index: 999;
 }
 
 .about__icon {
@@ -371,7 +370,73 @@
 }
 
 .education {
+  position: relative;
   height: 100vh;
   background: linear-gradient(to bottom, black, #140e18);
   scroll-snap-align: center;
+}
+
+.education__fade {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.education__fade::before {
+  content: "";
+  position: absolute;
+  border: none;
+  border-style: none;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/education.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+.education__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.education__container::before {
+  content: "";
+  position: absolute;
+  border: none;
+  border-style: none;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/14214_space-png.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px) brightness(0.6);
+}
+
+.education__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  z-index: 99;
+}
+
+.education__content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+}
+
+.planet {
+  width: 55%;
+  height: 100%;
 }
