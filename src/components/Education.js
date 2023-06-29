@@ -42,7 +42,7 @@ function Education() {
                 <li><img className='education__icon' src={unicesumar} alt='Unicesumar' /></li>
                 <li><img className='education__icon' src={triple10} alt='Triple10' /></li>
                 <li><img className='education__icon' src={alura} alt='Alura' /></li>
-                <li><img className='education__icon' src={freeCode} alt='FreeCodeCamp' /></li>
+                <li><img className='education__icon icon' src={freeCode} alt='FreeCodeCamp' /></li>
                 <li><img className='education__icon' src={etrr} alt='Etrr' /></li>
               </ul>
             </div>

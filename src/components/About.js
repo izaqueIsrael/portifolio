@@ -31,7 +31,7 @@ function About() {
         <div className={`about__container ${isLoading ? 'loading' : ''}`}>
           <img className="about__image" src={astronaut} alt="astronaut" />
           <div className="about__texts">
-            <h2 className='text title about__title'>
+            <h2 className='text title'>
               <ReactTypingEffect
                 text={["Sobre Mim..."]}
                 speed={100}
@@ -45,9 +45,7 @@ function About() {
               "Não são as flechas, mas os arqueiros. Não são as espadas, mas os guerreiros por trás delas." - J.R.R. Tolkien
             </cite>
             <p className='text about__text'>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+              Sou um desenvolvedor web full stack que traz uma combinação única de criatividade e experiência para o mundo digital. Se você está em busca de soluções inovadoras e funcionais, você veio ao lugar certo!
             </p>
             <ul className='about__list'>
               <li><img className='about__icon' alt='html' src={html} /></li>

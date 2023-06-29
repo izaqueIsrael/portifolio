@@ -7,7 +7,7 @@ const Rocket = () => {
   const rocket = useGLTF('./meteour/scene.gltf');
 
   return (
-    <primitive object={rocket.scene} scale={0.7} position={[0, 0, 0]} rotation={[0, 0, 0]} />
+    <primitive object={rocket.scene} scale={0.6} position={[0, 0, 0]} rotation={[0, 0, 0]} />
   );
 };
 
@@ -34,7 +34,6 @@ const RocketCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Rocket />
-
         <Preload all />
       </Suspense>
     </Canvas>
