@@ -16,7 +16,7 @@ function Projects() {
               cursor="_"
               className="typing-effect text title"
             />
-            <div className='cards__container'>
+            {/* <div className='cards__container'>
               <div className='card card__cosmic'>
                 <div className='card__texts'>
                   <h3 className='title card__title'>
@@ -62,7 +62,7 @@ function Projects() {
             </div>
             <div className='education__image'>
 
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

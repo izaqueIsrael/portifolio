@@ -785,7 +785,7 @@
   min-height: 100vh;
   background: linear-gradient(to bottom, black, #140e18);
   scroll-snap-align: center;
-  z-index: 999;
+  z-index: 1;
   align-items: center;
 }
 
@@ -811,4 +811,15 @@
   transform: rotate(180deg);
   -webkit-mask-image: linear-gradient(to bottom, black, transparent);
   mask-image: linear-gradient(to bottom, black, transparent);
+}
+
+.contact__container {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  display: relative;
+  z-index: 999;
 }

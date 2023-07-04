@@ -14,9 +14,11 @@ function Contact() {
           className="typing-effect text title"
         />
         <div className='contact__container'>
-          <div className='form'>
-
-          </div>
+          <form className='form'>
+            <input />
+            <input />
+            <textarea></textarea>
+          </form>
           <div className='earth'>
             <Earth />
           </div>
