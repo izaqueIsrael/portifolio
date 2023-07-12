@@ -1,8 +1,8 @@
-import React, { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import React, { useCallback } from 'react';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
 
-const HeaderParticles = () => {
+const ContactParticles = () => {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
@@ -12,25 +12,23 @@ const HeaderParticles = () => {
   }, []);
 
   return (
-    <div
-      className="particles"
-    >
+    <div className='particles'>
       <Particles
-        id="tsparticles"
+        id='tsparticles'
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
           fpsLimit: 60,
           interactivity: {
-            detect_on: "canvas",
+            detect_on: 'canvas',
             events: {
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: 'repulse',
               },
               onClick: {
                 enable: true,
-                mode: "push",
+                mode: 'push',
               },
               resize: true,
             },
@@ -54,10 +52,10 @@ const HeaderParticles = () => {
               },
             },
             color: {
-              value: "#ffffff",
+              value: '#ffffff',
             },
             shape: {
-              type: "circle",
+              type: 'star',
             },
             opacity: {
               value: 1,
@@ -84,11 +82,11 @@ const HeaderParticles = () => {
             },
             move: {
               enable: true,
-              speed: 0.1,
-              direction: "none",
+              speed: 2,
+              direction: 'top',
               random: true,
               straight: false,
-              out_mode: "out",
+              out_mode: 'out',
               bounce: false,
               attract: {
                 enable: false,
@@ -104,4 +102,4 @@ const HeaderParticles = () => {
   );
 };
 
-export default HeaderParticles;
+export default ContactParticles;

@@ -9,8 +9,8 @@ import freeCode from '../images/FREECODE.svg'
 
 function Education() {
   return (
-    <section className="education">
-      <div className="education__fade">
+    <section id='education' className='education'>
+      <div className='education__fade'>
         <div className='education__container'>
           <div className='education__contents'>
             <div className='education__content'>
@@ -19,22 +19,24 @@ function Education() {
                 speed={100}
                 eraseDelay={2000}
                 typingDelay={500}
-                cursor="_"
-                className="typing-effect text title"
+                cursor='_'
+                className='typing-effect text title'
               />
               <cite className='cite'>
-                "Knowledge is power", Francis Bacon
+                'Knowledge is power', Francis Bacon
               </cite>
               <div className='education__texts'>
-                <div className='education__line' />
                 <div className='education__text'>
                   <ul className='text education__lists'>
-                    <li className='education__list'>Engenharia de Software, Unicesumar, 01.2025;</li>
-                    <li className='education__list'>Full Stack Developer, Triple 10, Concluído;</li>
-                    <li className='education__list'>Git e Github, Alura, Concluído;</li>
-                    <li className='education__list'>Responsible Web Designer, FreeCodeCamp, Concluído;</li>
-                    <li className='education__list'>Técnico em Mecatrônica, ETRR, Concluído;</li>
-                    <li className='education__list'>Inglês, CNA, Intermediário;</li>
+                    <div className='education__line' />
+                    <div>
+                      <li className='education__list'>Engenharia de Software - Unicesumar - 01.2025;</li>
+                      <li className='education__list'>Full Stack Developer - Triple 10 - Concluído;</li>
+                      <li className='education__list'>Técnico em Mecatrônica - ETRR - Concluído;</li>
+                      <li className='education__list'>Web Designer - FreeCodeCamp - Concluído;</li>
+                      <li className='education__list'>Git e Github - Alura - Concluído;</li>
+                      <li className='education__list'>Inglês - CNA - Intermediário;</li>
+                    </div>
                   </ul>
                 </div>
               </div>
@@ -52,7 +54,6 @@ function Education() {
           </div>
         </div>
       </div>
-      <img className="scroll" src={arrow} alt='vá para baixo' />
     </section>
   );
 };

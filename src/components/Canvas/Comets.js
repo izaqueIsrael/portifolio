@@ -1,10 +1,10 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import CanvasLoader from "../Loader";
+import React, { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import CanvasLoader from '../Loader';
 
 const Comets = () => {
-  const comets = useGLTF("./comets/scene.gltf");
+  const comets = useGLTF('./comets/scene.gltf');
 
   return (
     <primitive object={comets.scene} scene={2.5} scale={3} position-y={0} rotation-y={0} />

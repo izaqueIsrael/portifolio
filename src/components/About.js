@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import astronaut from '../images/colorful-astronaut-vintage-poster-galaxy-voyager-shining-astronaut-on-space-free-png.png';
-import arrow from '../images/scroll.png';
 import ReactTypingEffect from 'react-typing-effect';
 import html from '../images/languages/HTML.svg'
 import css from '../images/languages/CSS.svg'
@@ -26,23 +25,23 @@ function About() {
   }, []);
 
   return (
-    <section className="about">
-      <div className="cloud-about">
+    <section id='about' className='about'>
+      <div className='cloud-about'>
         <div className={`about__container ${isLoading ? 'loading' : ''}`}>
-          <img className="about__image" src={astronaut} alt="astronaut" />
-          <div className="about__texts">
+          <img className='about__image' src={astronaut} alt='astronaut' />
+          <div className='about__texts'>
             <h2 className='text title'>
               <ReactTypingEffect
-                text={["Sobre Mim..."]}
+                text={['Sobre Mim...']}
                 speed={100}
                 eraseDelay={2000}
                 typingDelay={500}
-                cursor="_"
-                className="typing-effect text title"
+                cursor='_'
+                className='typing-effect text title'
               />
             </h2>
             <cite className='text cite about__cite'>
-              "Não são as flechas, mas os arqueiros. Não são as espadas, mas os guerreiros por trás delas." - J.R.R. Tolkien
+              'Não são as flechas, mas os arqueiros. Não são as espadas, mas os guerreiros por trás delas.' - J.R.R. Tolkien
             </cite>
             <p className='text about__text'>
               Sou um desenvolvedor web full stack que traz uma combinação única de criatividade e experiência para o mundo digital. Se você está em busca de soluções inovadoras e funcionais, você veio ao lugar certo!
@@ -63,7 +62,6 @@ function About() {
           </div>
         </div>
       </div>
-      <img className="scroll" src={arrow} alt='vá para baixo' />
     </section>
   );
 }

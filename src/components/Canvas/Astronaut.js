@@ -1,10 +1,10 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF, useAnimations } from "@react-three/drei";
-import CanvasLoader from "../Loader";
+import React, { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Preload, useGLTF, useAnimations } from '@react-three/drei';
+import CanvasLoader from '../Loader';
 
 const Astronaut = () => {
-  const astronaut = useGLTF("./astronaut/scene.gltf");
+  const astronaut = useGLTF('./astronaut/scene.gltf');
 
   return (
     <primitive object={astronaut.scene} scene={2.5} position-y={0} rotation-y={0} />
