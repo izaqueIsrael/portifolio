@@ -1,0 +1,88 @@
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 12.5rem;
+  height: 12.5rem;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../images/header/rotate.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: invert(1);
+  mix-blend-mode: screen;
+  animation: circleRotate 30s linear infinite;
+}
+
+.circle__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.3rem;
+  height: 7.3rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.circle__container:hover {
+  box-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+.circle__text {
+  font-size: 1.3rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  transition: transform 0.5s ease-in-out;
+  margin: 1rem 0 0 0;
+  z-index: 9999;
+}
+
+.circle__text:hover {
+  transform: scale(1.05);
+  color: white;
+}
+
+@keyframes circleRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .circle {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    z-index: 999999;
+  }
+
+  .circle__container {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .circle__text {
+    font-size: 1.1rem;
+  }
+}

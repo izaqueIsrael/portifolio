@@ -1,0 +1,79 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: relative;
+  row-gap: 1rem;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.8), 0 0 80px rgba(255, 255, 255, 0.8);
+  animation: formPulsate 2s infinite;
+  border-radius: .625rem;
+  padding: 2rem;
+}
+
+@keyframes formPulsate {
+  0% {
+    box-shadow: 0 0 0.56px rgba(255, 255, 255, 0.8), 0 0 2.22px rgba(255, 255, 255, 0.8), 0 0 4.44px rgba(255, 255, 255, 0.8), 0 0 8.89px rgba(255, 255, 255, 0.8);
+  }
+
+  50% {
+    box-shadow: 0 0 0.56px rgba(255, 255, 255, 0.8), 0 0 1.11px rgba(255, 255, 255, 0.8), 0 0 2.22px rgba(255, 255, 255, 0.8), 0 0 4.44px rgba(255, 255, 255, 0.8);
+  }
+
+  100% {
+    box-shadow: 0 0 0.56px rgba(255, 255, 255, 0.8), 0 0 2.22px rgba(255, 255, 255, 0.8), 0 0 4.44px rgba(255, 255, 255, 0.8), 0 0 8.89px rgba(255, 255, 255, 0.8);
+  }
+}
+
+.form__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  position: relative;
+}
+
+
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: black;
+  min-width: 17.5rem;
+  background-color: transparent;
+  position: relative;
+  border-radius: 1.875rem;
+  border-style: none;
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.form__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .form {
+    width: 80%;
+    padding: 1rem 0.5rem;
+    max-width: 20rem;
+  }
+
+  .form__content {
+    width: 80%;
+  }
+
+  .input {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .form__button {
+    min-width: auto;
+    width: 80%;
+  }
+}

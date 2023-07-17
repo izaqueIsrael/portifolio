@@ -1,0 +1,14 @@
+.input {
+  font-size: 1.125rem;
+  min-width: 17.5rem;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-style: none;
+  border-bottom: 1px solid gray;
+}
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .input {
+    min-width: auto;
+  }
+}

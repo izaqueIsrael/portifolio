@@ -11,8 +11,8 @@ const Card = ({ cardImage, title, description, text, link }) => {
         <p className='text card__text'>
           {text}
         </p>
-        <button className='card__button button '>
-          <a href={link} target='_blank' rel='noreferrer'>Saiba Mais</a>
+        <button className='card__button button'>
+          <a className='card__link' href={link} target='_blank' rel='noreferrer'>Saiba Mais</a>
         </button>
       </div>
     </div>

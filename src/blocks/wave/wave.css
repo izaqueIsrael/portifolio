@@ -1,0 +1,11 @@
+.wave {
+  width: 2.2rem;
+  filter: invert(20%);
+}
+
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .wave {
+    width: 1.5rem;
+  }
+}

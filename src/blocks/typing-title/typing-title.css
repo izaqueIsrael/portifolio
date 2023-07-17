@@ -1,0 +1,14 @@
+.typing-title {
+  color: white;
+  font-family: monospace, roboto, Inter;
+  font-size: 3rem;
+}
+
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .typing-title {
+    color: white;
+    font-family: monospace, roboto, Inter;
+    font-size: 1.8rem;
+  }
+}

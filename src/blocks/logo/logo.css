@@ -1,0 +1,15 @@
+.logo {
+  transform: scale(0.8);
+  filter: invert(100%);
+  width: 7.8125rem;
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+@media screen and (min-width: 20rem) and (max-width: 48rem) {
+  .logo {
+    width: 5rem;
+  }
+
+}

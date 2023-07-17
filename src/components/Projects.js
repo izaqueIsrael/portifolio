@@ -19,6 +19,7 @@ function Projects() {
                 title={card.title}
                 description={card.description}
                 text={card.text}
+                link={card.link}
               />)}
           </div>
         </div>

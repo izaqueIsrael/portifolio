@@ -1,0 +1,13 @@
+.title {
+  font-family: monospace, roboto, Inter;
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .title {
+    font-size: 1.8rem;
+  }
+}

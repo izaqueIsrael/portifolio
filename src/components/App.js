@@ -52,10 +52,10 @@ function App() {
       element:
         <>
           <TransitionEffect />
+          <Popup isOpen={isOpen} togglePopup={togglePopup} />
           <Navbar togglePopup={togglePopup} />
           <Projects />
           <Footer />
-          <Popup isOpen={isOpen} togglePopup={togglePopup} />
           <StarParticles />
         </>
     },

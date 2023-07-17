@@ -1,0 +1,45 @@
+.planet {
+  position: relative;
+  min-width: 100%;
+  width: 40vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.planet::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border: none;
+  border-style: none;
+  width: 100%;
+  height: 80%;
+  background-image: url(../../images/portal-magic-animation-portal-6b9083ab2747023cc19bcd4af5516e0a.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(1) opacity(0.5) invert(0.4);
+  animation: rotation 120s infinite linear, pulsatePlanet 6s infinite alternate;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .planet {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .planet::before {
+    display: none;
+  }
+
+}

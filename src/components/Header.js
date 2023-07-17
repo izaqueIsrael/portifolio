@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <header id='header' className='header'>
-      <div className='cloud'>
+      <div className='header__cloud'>
         <div className='header__container'>
           <div className='header__content'>
             <div className='header__texts'>

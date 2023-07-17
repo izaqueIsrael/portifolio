@@ -16,7 +16,7 @@ import Reveal from './Reveal';
 function About() {
   return (
     <section id='about' className='about'>
-      <div className='cloud-about'>
+      <div className='about__cloud'>
         <div className='about__container'>
           <Reveal>
             <img className='about__image' src={astronaut} alt='astronaut' />

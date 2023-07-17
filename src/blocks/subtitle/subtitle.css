@@ -1,0 +1,12 @@
+.subtitle {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .subtitle {
+    font-size: 1.6rem;
+  }
+}

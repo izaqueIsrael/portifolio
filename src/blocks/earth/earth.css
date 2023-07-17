@@ -1,0 +1,14 @@
+.earth {
+  position: relative;
+  z-index: 999;
+  width: 50%;
+  height: 60vh;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 20rem) and (max-width: 64rem) {
+  .earth {
+    width: 100%;
+    height: 40vh;
+  }
+}

@@ -1,0 +1,6 @@
+.cite {
+  position: relative;
+  animation: pulsate 5s ease-in-out infinite;
+  font-size: 1.375rem;
+  text-align: justify;
+}
