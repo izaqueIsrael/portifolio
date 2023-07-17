@@ -1,0 +1,19 @@
+.button {
+  font-family: monospace, roboto, Inter;
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 400;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+
+.button__loading {
+  width: 2.3rem;
+}

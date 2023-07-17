@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { useMotionValue, useSpring, useInView, spring } from 'framer-motion';
+import { useMotionValue, useSpring, useInView } from 'framer-motion';
 
 const AnimatedNumbers = ({ value }) => {
   const numRef = useRef(null);

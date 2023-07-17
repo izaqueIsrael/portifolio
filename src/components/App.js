@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Navbar from './Navbar';
 import Header from './Header';
 import About from './About';
@@ -9,18 +10,39 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Experience from './Experience';
 import StarParticles from './StarParticles';
+import Popup from './Popup';
+import TransitionEffect from './TransitionEffect';
+import ErrorPage from './ErrorPage';
+import ParticlesStarFall from './ParticlesStarFall';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
+
   const router = createBrowserRouter([
     {
       path: '/',
       element:
         <>
-          <Navbar />
+          <TransitionEffect />
+          <Popup isOpen={isOpen} togglePopup={togglePopup} />
+          <Navbar togglePopup={togglePopup} />
           <Header />
           <About />
           <Experience />
           <Education />
+          <Footer />
+          <StarParticles />
+        </>,
+      errorElement:
+        <>
+          <TransitionEffect />
+          <Popup isOpen={isOpen} togglePopup={togglePopup} />
+          <Navbar togglePopup={togglePopup} />
+          <ErrorPage />
           <Footer />
           <StarParticles />
         </>
@@ -29,24 +51,24 @@ function App() {
       path: '/projects',
       element:
         <>
-          <Navbar />
+          <TransitionEffect />
+          <Navbar togglePopup={togglePopup} />
           <Projects />
           <Footer />
+          <Popup isOpen={isOpen} togglePopup={togglePopup} />
+          <StarParticles />
         </>
     },
     {
       path: '/contact',
       element:
         <>
-          <Navbar />
+          <TransitionEffect />
+          <Popup isOpen={isOpen} togglePopup={togglePopup} />
+          <Navbar togglePopup={togglePopup} />
           <Contact />
-        </>
-    },
-    {
-      path: '/articles',
-      element:
-        <>
-          <Navbar />
+          <Footer />
+          <ParticlesStarFall />
         </>
     }
 
@@ -54,7 +76,9 @@ function App() {
 
   return (
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <AnimatePresence mode='wait'>
+        <RouterProvider router={router} />
+      </AnimatePresence>
     </React.StrictMode>
   );
 }

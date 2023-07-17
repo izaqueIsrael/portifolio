@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
-const HeaderParticlesStarFall = () => {
+const ParticlesStarFall = () => {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
@@ -55,18 +55,18 @@ const HeaderParticlesStarFall = () => {
               value: '#ffffff',
             },
             shape: {
-              type: 'star', // Alterado para 'star'
+              type: 'star',
               stroke: {
                 width: 0,
                 color: '#000000',
               },
               polygon: {
-                nb_sides: 5, // Número de lados da estrela
+                nb_sides: 5,
               },
               image: {
-                src: 'https://path/to/star.png', // URL da imagem da estrela (opcional)
-                width: 100, // Largura da imagem (opcional)
-                height: 100, // Altura da imagem (opcional)
+                src: 'https://path/to/star.png',
+                width: 100,
+                height: 100,
               },
             },
             opacity: {
@@ -95,7 +95,7 @@ const HeaderParticlesStarFall = () => {
             move: {
               enable: true,
               speed: 0.1,
-              direction: 'bottom', // Alterado para 'bottom' para criar o efeito de estrelas cadentes
+              direction: 'bottom',
               random: true,
               straight: false,
               out_mode: 'out',
@@ -114,4 +114,4 @@ const HeaderParticlesStarFall = () => {
   );
 };
 
-export default HeaderParticlesStarFall;
+export default ParticlesStarFall;

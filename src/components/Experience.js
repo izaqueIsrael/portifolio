@@ -1,4 +1,5 @@
-import ReactTypingEffect from 'react-typing-effect';
+import Reveal from './Reveal';
+import AnimatedNumbers from './AnimetedNumbers';
 import experienceImage from '../images/xp.jpg';
 
 const Experience = () => {
@@ -7,34 +8,41 @@ const Experience = () => {
       <div className='experience__container'>
         <div className='experience__contents'>
           <div className='experience__texts'>
-            <ReactTypingEffect
-              text={['Experiência']}
-              speed={100}
-              eraseDelay={2000}
-              typingDelay={500}
-              cursor='_'
-              className='typing-effect text title'
-            />
-            <cite className='cite experience__cite'>
-              "A experiência é a forja que molda a sabedoria."
-            </cite>
+            <Reveal>
+              <h2 className='title'>
+                Experiência
+              </h2>
+            </Reveal>
+            <Reveal>
+              <cite className='cite experience__cite'>
+                "A experiência é a forja que molda a sabedoria."
+              </cite>
+            </Reveal>
             <div className='education__texts'>
               <div className='education__text'>
                 <ul className='text education__lists'>
                   <div className='education__line' />
-                  <div>
-                    <li className='education__list'>Engenharia de Software - Unicesumar - 01.2025;</li>
-                    <li className='education__list'>Full Stack Developer - Triple 10 - Concluído;</li>
-                    <li className='education__list'>Técnico em Mecatrônica - ETRR - Concluído;</li>
-                    <li className='education__list'>Web Designer - FreeCodeCamp - Concluído;</li>
-                    <li className='education__list'>Git e Github - Alura - Concluído;</li>
-                    <li className='education__list'>Inglês - CNA - Intermediário;</li>
-                  </div>
+                  <Reveal>
+                    <ul className='about__lists'>
+                      <li className='education__list'>Técnico Mecatrônico, Autônomo - 01/2021 - presente;</li>
+                      <li className='education__list'>Militar - Exército Brasileiro - 02/2020 - 09/2020;</li>
+                      <li className='education__list'>Gerente de Vendas - Nova Meriti Ótica - 01/2016 - 12/2019;</li>
+                    </ul>
+                  </Reveal>
                 </ul>
               </div>
+              <Reveal>
+                <div className='header__numbers'>
+                  <p className='text number'>+ <span className='title' ><AnimatedNumbers value={15} /></span> Projetos</p>
+                  <p className='text number'>nº<span className='title'><AnimatedNumbers value={1} /></span> Code Jam</p>
+                  <p className='text number'>nº<span className='title'><AnimatedNumbers value={1} /></span> Triple 10</p>
+                </div>
+              </Reveal>
             </div>
           </div>
-          <img src={experienceImage} alt='astronaut' className='about__image' />
+          <Reveal>
+            <img src={experienceImage} alt='astronaut' className='about__image experience__image' />
+          </Reveal>
         </div>
       </div>
     </section>
