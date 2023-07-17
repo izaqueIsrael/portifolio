@@ -20,7 +20,7 @@
   filter: invert(100%);
 }
 
-.scroll {
+/* .scroll {
   width: 3rem;
   filter: invert(80%);
   animation: floatAnimation 1s ease-in-out infinite;
@@ -29,7 +29,7 @@
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-}
+} */
 
 /* .particles {
   position: relative;
