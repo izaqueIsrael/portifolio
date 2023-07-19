@@ -26,6 +26,7 @@
   mix-blend-mode: screen;
   animation: circleRotate 30s linear infinite;
   z-index: 99;
+  filter: invert(1);
 }
 
 .circle__container {

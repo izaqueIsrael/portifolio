@@ -1,5 +1,3 @@
-import ReactTypingEffect from 'react-typing-effect';
-import card1 from '../images/cards/COSMIC.png'
 import Card from './Card';
 import { cardList } from '../utils/constants';
 
