@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Portfólio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é o repositório do projeto **Portfólio**. É um projeto baseado em React, onde você pode criar um portfólio pessoal para exibir suas informações e trabalhos.
 
-## Available Scripts
+## Instalação
 
-In the project directory, you can run:
+Certifique-se de ter o Node.js instalado em sua máquina. Em seguida, execute o seguinte comando no diretório raiz do projeto para instalar as dependências:
 
-### `npm start`
+npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Uso
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Para iniciar o aplicativo em um ambiente de desenvolvimento, execute o seguinte comando:
 
-### `npm test`
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Isso iniciará o aplicativo e poderá ser acessado no seu navegador em [http://localhost:3000](http://localhost:3000).
 
-### `npm run build`
+## Build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Se você deseja criar uma versão otimizada para produção, execute o seguinte comando:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm run build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este comando criará uma versão otimizada do aplicativo na pasta `build` que pode ser implantada em um servidor.
 
-### `npm run eject`
+## Testes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+O projeto utiliza o framework Jest para testes. Para executar os testes, utilize o seguinte comando:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm test
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Isso executará os testes e fornecerá os resultados no console.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contribuição
 
-## Learn More
+Contribuições são bem-vindas! Se você quiser contribuir para este projeto, siga as etapas abaixo:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Faça um fork deste repositório.
+2. Crie um branch com a sua feature ou correção: `git checkout -b minha-feature`.
+3. Faça as alterações desejadas e faça commit das mesmas: `git commit -m 'Minha nova feature'`.
+4. Envie suas alterações para o repositório remoto: `git push origin minha-feature`.
+5. Envie um pull request explicando suas alterações.

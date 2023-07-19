@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/new-logo.png';
-import linkedin from '../images/footer-icons/linkedin.svg';
+import linkedin from '../images/footer-icons/linkedin.png';
 import github from '../images/footer-icons/git.png';
 import menu from '../images/menu-removebg-preview.png';
 
@@ -35,7 +35,7 @@ function Navbar({ togglePopup }) {
         <li className='navbar__text'><Link className='navbar__text' to='/contact'>Contato</Link></li>
       </ul>
       <ul className='navbar__icons'>
-        <a className='navbar__text' href='https://www.linkedin.com/in/izaque-israel/' target='_blank' rel='noreferrer'><img className='navbar__icon' src={linkedin} alt='linkedin' /></a>
+        <a className='navbar__text' href='https://www.linkedin.com/in/izaque-israel/' target='_blank' rel='noreferrer'><img className='icon navbar__icon' src={linkedin} alt='linkedin' /></a>
         <a className='navbar__text' href='https://github.com/izaqueIsrael' target='_blank' rel='noreferrer'><img className='icon navbar__icon' src={github} alt='github' /></a>
       </ul>
       <button onClick={togglePopup} className='navbar__button'><img className='navbar__menu' src={menu} alt='menu' /></button>

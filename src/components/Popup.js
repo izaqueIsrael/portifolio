@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import close from '../images/close-removebg-preview.png'
-import linkedin from '../images/footer-icons/linkedin.svg';
+import linkedin from '../images/footer-icons/linkedin.png';
 import github from '../images/footer-icons/git.png';
 
 const Popup = ({ isOpen, togglePopup }) => {

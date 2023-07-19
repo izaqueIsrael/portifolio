@@ -25,7 +25,7 @@ function Header() {
               <Reveal>
                 <h1>
                   <ReactTypingEffect
-                    text={['Olá!', 'Bem-Vindo!']}
+                    text={['Olá!', 'Boas-Vindas!']}
                     speed={100}
                     eraseDelay={2000}
                     typingDelay={500}
