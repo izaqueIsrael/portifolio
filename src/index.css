@@ -16,9 +16,6 @@
 /* button */
 @import url(./blocks/button/button.css);
 
-/* icon */
-@import url(./blocks/icon/icon.css);
-
 /* text */
 @import url(./blocks/text/text.css);
 
@@ -57,6 +54,9 @@
 
 /* header */
 @import url(./blocks/header/header.css);
+
+/* icon */
+@import url(./blocks/icon/icon.css);
 
 /* fade-in */
 @import url(./blocks/fade-in/fade-in.css);
