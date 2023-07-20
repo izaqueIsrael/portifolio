@@ -2,6 +2,12 @@
 
 Este é o repositório do projeto **Portfólio**. É um projeto baseado em React, onde você pode criar um portfólio pessoal para exibir suas informações e trabalhos.
 
+## Links
+
+- [Website de produção](https://cosmic-tau.vercel.app/)
+- [Repositório](https://github.com/izaqueIsrael/portifolio)
+
+
 ## Instalação
 
 Certifique-se de ter o Node.js instalado em sua máquina. Em seguida, execute o seguinte comando no diretório raiz do projeto para instalar as dependências:
