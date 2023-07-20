@@ -17,7 +17,7 @@ const Popup = ({ isOpen, togglePopup }) => {
           <li className='text popup__text'><Link className='popup__text' to='/contact'>Contato</Link></li>
         </ul>
         <ul className='popup__icons'>
-          <a className='popup__text' href='https://www.linkedin.com/in/izaque-israel/' target='_blank' rel='noreferrer'><img className='navbar__icon' src={linkedin} alt='linkedin' /></a>
+          <a className='navbar__text' href='https://www.linkedin.com/in/izaque-israel/' target='_blank' rel='noreferrer'><img className='icon navbar__icon' src={linkedin} alt='linkedin' /></a>
           <a className='popup__text' href='https://github.com/izaqueIsrael' target='_blank' rel='noreferrer'><img className='icon navbar__icon' src={github} alt='github' /></a>
         </ul>
       </div>
