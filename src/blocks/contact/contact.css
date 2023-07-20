@@ -18,7 +18,24 @@
   background-size: cover;
   background-position: bottom;
   background-image: url(../../images/space.jpg);
+  animation: BackgroundPulsate 6s infinite;
+  z-index: 0;
 }
+
+@keyframes BackgroundPulsate {
+  0% {
+    filter: brightness(0.7);
+  }
+
+  50% {
+    filter: brightness(1);
+  }
+
+  100% {
+    filter: brightness(0.7);
+  }
+}
+
 
 .contact__container {
   display: flex;
