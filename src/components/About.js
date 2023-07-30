@@ -12,6 +12,9 @@ import docker from '../images/languages/Docker.svg';
 import aws from '../images/languages/aws.png';
 import cloud from '../images/languages/google-cloud.png';
 import Reveal from './Reveal';
+import git from '../images/languages/Git-2.svg';
+import figma from '../images/languages/Figma-Dark.svg';
+import azure from '../images/languages/azure-original.svg';
 
 function About() {
   return (
@@ -44,8 +47,11 @@ function About() {
                 <li><img className='about__icon' alt='docker' src={docker} /></li>
                 <li><img className='about__icon' alt='noSQL' src={noSQL} /></li>
                 <li><img className='about__icon' alt='SQL' src={sql} /></li>
+                <li><img className='about__icon' alt='git' src={git} /></li>
+                <li><img className='about__icon' alt='figma' src={figma} /></li>
                 <li><img className='about__icon' alt='google cloud' src={cloud} /></li>
                 <li><img className='about__icon' alt='aws' src={aws} /></li>
+                <li><img className='about__icon' alt='azure' src={azure} /></li>
               </ul>
             </Reveal>
           </div>
