@@ -4,11 +4,8 @@ Este é o repositório do projeto **COSMIC**. É um projeto baseado em React, on
 
 ## Links
 
-Infelizmente, como o projeto possui 2 modelos 3D e a máquina virtual grátis da plataforma da AZURE só possui 800mb de RAM, fica inviável colocar no ar este projeto na plataforma deles de forma gratuíta, mas ela segue configurada. Recomendo acessar o "website de produção" ou seguir pelo "website de produção na AWS".
-
 - [Website de produção](https://cosmic-tau.vercel.app/)
 - [Website de produção na AWS](http://cosmic-aws.duckdns.org/)
-- [Website de produção na AZURE](https://cosmic-azure.duckdns.org/)
 - [Repositório](https://github.com/izaqueIsrael/portifolio)
 
 
