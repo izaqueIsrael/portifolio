@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: /home/isaac/Documents/Github/portifolio
+    working_dir: /usr/src/app
+    ports:
+      - "3000:3000"
+    volumes:
+      - /home/isaac/Documents/Github/portifolio:/usr/src/app
+    command: sh -c "npm install && npm run start"
