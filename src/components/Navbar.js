@@ -28,11 +28,11 @@ function Navbar({ togglePopup }) {
     <nav className='navbar'>
       <Link className='navbar__text' to='/'><img className='logo' src={logo} alt='logo' /></Link>
       <ul className={navbarClass}>
-        <li className='navbar__text'><Link className='navbar__text' to='/'>Home</Link></li>
+        <li className='navbar__content'><Link className='navbar__text' to='/'>Home</Link></li>
         <div className='vertical-line' />
-        <li className='navbar__text'><Link className='navbar__text' to='/projects'>Projetos</Link></li>
+        <li className='navbar__content'><Link className='navbar__text' to='/projects'>Projetos</Link></li>
         <div className='vertical-line' />
-        <li className='navbar__text'><Link className='navbar__text' to='/contact'>Contato</Link></li>
+        <li className='navbar__content'><Link className='navbar__text' to='/contact'>Contato</Link></li>
       </ul>
       <ul className='navbar__icons'>
         <a className='navbar__text' href='https://www.linkedin.com/in/izaque-israel/' target='_blank' rel='noreferrer'><img className='icon navbar__icon' src={linkedin} alt='linkedin' /></a>

@@ -31,7 +31,7 @@
   padding: 0;
   list-style-type: none;
   border-radius: 1rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1rem;
 }
 
 
@@ -50,6 +50,10 @@
 }
 
 .navbar__text {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  flex-direction: column;
   cursor: pointer;
   animation: pulsate 5s ease-in-out infinite;
   text-decoration: none;
@@ -59,11 +63,6 @@
   transform: scale(1.1);
   color: white;
   animation: none;
-}
-
-
-.navbar__text {
-  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .navbar__button {
@@ -81,6 +80,13 @@
   display: none;
 }
 
+.navbar__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 20rem) and (max-width: 48rem) {
   .navbar {
     min-height: 3.5rem;
@@ -89,6 +95,7 @@
   .navbar__container {
     min-width: 10rem;
     display: none;
+    padding: 0.25rem 0.5rem;
   }
 
   .navbar__icons {
