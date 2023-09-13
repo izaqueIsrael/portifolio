@@ -15,9 +15,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  /* width: 70%;
-  padding: 5%;
-  flex-grow: 1; */
+  padding: 5% 0;
 }
 
 
@@ -81,6 +79,7 @@
   font-size: 2rem;
   font-weight: 400;
   margin: 0.5rem 0;
+  text-align: center;
 }
 
 .card__subtitle {
