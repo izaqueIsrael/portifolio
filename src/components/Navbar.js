@@ -6,14 +6,14 @@ import github from '../images/footer-icons/git.png';
 import menu from '../images/menu-removebg-preview.png';
 
 function Navbar({ togglePopup }) {
-  const [navbarClass, setNavbarClass] = useState('navbar transparent');
+  const [navbarClass, setNavbarClass] = useState('text navbar__container transparent');
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 0) {
-        setNavbarClass('navbar black');
+        setNavbarClass('text navbar__container black');
       } else {
-        setNavbarClass('navbar transparent');
+        setNavbarClass('text navbar__container transparent');
       }
     };
 
@@ -25,9 +25,9 @@ function Navbar({ togglePopup }) {
   }, []);
 
   return (
-    <nav className={navbarClass}>
+    <nav className='navbar'>
       <Link className='navbar__text' to='/'><img className='logo' src={logo} alt='logo' /></Link>
-      <ul className='navbar__container text'>
+      <ul className={navbarClass}>
         <li className='navbar__text'><Link className='navbar__text' to='/'>Home</Link></li>
         <div className='vertical-line' />
         <li className='navbar__text'><Link className='navbar__text' to='/projects'>Projetos</Link></li>

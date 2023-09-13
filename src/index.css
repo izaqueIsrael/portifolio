@@ -99,3 +99,15 @@
 
 /* experience */
 @import url(./blocks/experience/experience.css);
+
+.particles {
+  display: fixed;
+  width: 100vw !important;
+  max-width: 100vw !important;
+  background-color: green;
+}
+
+#tsparticles {
+  width: 100vw !important;
+  max-width: 100vw !important;
+}

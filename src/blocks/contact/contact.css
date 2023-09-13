@@ -27,6 +27,7 @@
   width: 80%;
   column-gap: 5rem;
   padding: 5%;
+  margin-top: 2rem;
 }
 
 @media screen and (min-width: 20rem) and (max-width: 64rem) {

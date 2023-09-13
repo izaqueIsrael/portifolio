@@ -4,8 +4,22 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-  width: 100%;
+  width: 95vw;
 }
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  /* width: 70%;
+  padding: 5%;
+  flex-grow: 1; */
+}
+
 
 .card {
   display: flex;
@@ -65,8 +79,8 @@
 
 .card__title {
   font-size: 2rem;
-  font-weight: 600;
-  margin: 1rem 0 1rem 0;
+  font-weight: 400;
+  margin: 0.5rem 0;
 }
 
 .card__subtitle {
@@ -116,15 +130,6 @@
   transition: background-color 0.3s ease;
 }
 
-.cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 70%;
-  padding: 5%;
-  flex-grow: 1;
-}
 
 .card__link {
   color: white;

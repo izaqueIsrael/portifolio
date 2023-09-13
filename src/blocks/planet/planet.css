@@ -12,7 +12,7 @@
   position: absolute;
   border: none;
   border-style: none;
-  width: 100%;
+  width: 90%;
   height: 80%;
   background-image: url(../../images/portal-magic-animation-portal-6b9083ab2747023cc19bcd4af5516e0a.png);
   background-position: center;
@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 20rem) and (max-width: 64rem) {
   .planet {
-    width: 100vw;
+    width: 90vw;
     height: 50vh;
   }
 
