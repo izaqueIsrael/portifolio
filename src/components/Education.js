@@ -27,7 +27,9 @@ function Education() {
                 <div className='education__line' />
                 <Reveal>
                   <ul className='about__lists'>
-                    <li className='education__list'>Engenharia de Software - Unicesumar - 01.2025;</li>
+                    <li className='education__list'>Engenharia de Software - Unicesumar</li>
+                    <li className='education__list'>AWS Cloud Practitioner- AWS - Concluído;</li>
+                    <li className='education__list'>AWS Cloud Data Engineering - Compass UOL - Concluído;</li>
                     <li className='education__list'>Full Stack Developer - Triple 10 - Concluído;</li>
                     <li className='education__list'>Técnico em Mecatrônica - ETRR - Concluído;</li>
                     <li className='education__list'>Web Designer - FreeCodeCamp - Concluído;</li>

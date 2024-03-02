@@ -24,7 +24,8 @@ const Experience = () => {
                   <div className='education__line' />
                   <Reveal>
                     <ul className='about__lists'>
-                      <li className='education__list'>Técnico Mecatrônico, Autônomo - 01/2021 - presente;</li>
+                      <li className='education__list'>Bolsista, Compass UOL - 08/2023 - 12/2023;</li>
+                      <li className='education__list'>Técnico Mecatrônico, Autônomo - 01/2021 - 08/2023;</li>
                       <li className='education__list'>Militar - Exército Brasileiro - 02/2020 - 09/2020;</li>
                       <li className='education__list'>Gerente de Operações - Nova Meriti Ótica - 01/2016 - 12/2019;</li>
                     </ul>
