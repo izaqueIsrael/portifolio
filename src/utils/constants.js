@@ -4,8 +4,16 @@ import web4 from '../images/cards/web4.png';
 import web3 from '../images/cards/web3.png';
 import carnaval from '../images/cards/carnaval.png';
 import back from '../images/cards/back.png';
+import SON from '../images/cards/SON.png';
 
 export const cardList = [
+  {
+    image: SON,
+    title: 'Sons of Node',
+    description: 'Projeto Educacional',
+    text: 'Projeto vencedor do Hackaton Code JAM',
+    link: 'https://github.com/izaqueIsrael/SonsOfNode',
+  },
   {
     image: cosmic,
     title: 'Cosmic',
